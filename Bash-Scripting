@@ -1,0 +1,39 @@
+ 
+
+In Linux and Unix-like operating systems, bash scripting is a potent tool for managing and automating system administration tasks. 
+The purpose of this assignment is to introduce students to the fundamentals of Bash scripting by going over key ideas, syntax, and writing strategies.
+A step-by-step tutorial for writing straightforward scripts will be provided in the assignment, along with useful exercises to reinforce the learning process.
+
+
+Assignment: Basics of Bash Scripting, Part 1
+
+Overview of the significance and advantages of Bash scripting in the introduction.
+Setting up the environment: Steps to create a Bash scripting environment.
+Script execution: A description of the various script execution options and how to run a Bash script.
+
+ Exercise 1 : Making Random Prize Pool decider with cases
+ 
+ code :
+
+
+
+echo "Enter your a number"          
+read n                                                      # TAking a number and storing in n
+case $n in                                                   #writing case syntax whether to check whether the taking number is in the prize pool or not
+101)
+echo echo "You got 1st prize" ;;                            #prizePool - 1 prize = (101), 2-prize = (510,610,710,810), 3-prize = (999,610,710,777,66,555,102)
+510|610|710|810)
+echo "You got 2nd prize" ;;
+999|888|777|66|555|102)
+echo "You got 3rd prize" ;;
+*)
+echo "Sorry, try for the next time" ;;                     #if the taking number is not mention in prize pool then you lost
+esac
+ 
+
+
+Conclusion:
+In conclusion, this assignment provides students with a comprehensive introduction to Bash scripting,
+covering essential concepts and techniques. By completing the exercises, students will gain practical 
+experience in writing Bash scripts and automating common tasks. Bash scripting skills are highly valuable for 
+system administrators, developers, and anyone working with Linux or Unix-like systems.
